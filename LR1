@@ -1,0 +1,21 @@
+void Srart()
+{
+anim = Get Component<Animator>();
+}
+
+Void Updates()
+{
+if (Input.Get.Key(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+{
+anim.SetBool("isRunning", true);
+}
+else
+{
+anim.SetBool("isRunning", false);
+}
+if (Input.GetKey(KeyCode.UpArrow))
+{
+anim.SetTrigger("jump");
+}
+}
+}
